@@ -5,11 +5,11 @@ import com.capgemini.learning.MoodAnalysisException.MoodAnalysisError;
 public class MoodAnalyser {
 	private String message;
 
-	public MoodAnalyser(String message) {
-		this.message = message;
+	public MoodAnalyser() {
 	}
 
-	public MoodAnalyser() {
+	public MoodAnalyser(String message) {
+		this.message = message;
 	}
 
 	public String analyseMood() throws MoodAnalysisException {
