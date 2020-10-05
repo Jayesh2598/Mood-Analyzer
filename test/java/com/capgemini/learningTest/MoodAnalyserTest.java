@@ -10,17 +10,17 @@ public class MoodAnalyserTest {
 	
 	@Test
 	public void testingSadMood() {
-		MoodAnalyser mood = new MoodAnalyser();
+		MoodAnalyser mood = new MoodAnalyser("I am in sad mood.");
 		String expectedMood= "Sad";
-		String actualMood= mood.analyseMood("I am in sad mood.");
+		String actualMood= mood.analyseMood();
 		assertEquals(expectedMood, actualMood);
 	}
 	
 	@Test
 	public void testingAnyMood() {
-		MoodAnalyser mood = new MoodAnalyser();
+		MoodAnalyser mood = new MoodAnalyser("I am in any mood.");
 		String expectedMood= "Happy";
-		String actualMood= mood.analyseMood("I am in any mood.");
+		String actualMood= mood.analyseMood();
 		assertEquals(expectedMood, actualMood);
 	}
 }

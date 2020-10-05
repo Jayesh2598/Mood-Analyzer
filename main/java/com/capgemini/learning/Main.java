@@ -11,8 +11,8 @@ public class Main {
 		System.out.println("Enter the message:");
 		String message= sc.nextLine();
 		
-		MoodAnalyser mood = new MoodAnalyser();
-		System.out.println(mood.analyseMood(message));
+		MoodAnalyser mood = new MoodAnalyser(message);
+		System.out.println(mood.analyseMood());
 	}
 
 }
