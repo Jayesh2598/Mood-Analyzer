@@ -11,17 +11,17 @@ public class MoodAnalyser {
 
 	public MoodAnalyser() {
 	}
-	
+
 	public String analyseMood() throws MoodAnalysisException {
-			if(message==null) {
-				throw new MoodAnalysisException("Null message entered.", MoodAnalysisError.NULL);
-			}
-			if(message.equals("")) {
-				throw new MoodAnalysisException("Empty message entered.", MoodAnalysisError.EMPTY);
-			}		
-			if (message.toLowerCase().contains(" sad"))
-				return "Sad";
-			else 
-				return "Happy";
+		if (message == null) {
+			throw new MoodAnalysisException("Null message entered.", MoodAnalysisError.NULL);
+		}
+		if (message.equals("")) {
+			throw new MoodAnalysisException("Empty message entered.", MoodAnalysisError.EMPTY);
+		}
+		if (message.toLowerCase().contains(" sad"))
+			return "Sad";
+		else
+			return "Happy";
 	}
 }
